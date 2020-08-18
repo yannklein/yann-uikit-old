@@ -6,6 +6,7 @@
   <title>Yann's UI Kit</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/plugins/unescaped-markup/prism-unescaped-markup.min.css">
+  <script src="https://kit.fontawesome.com/3926274332.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
@@ -16,8 +17,29 @@
     </div>
   </div>
   <div class="content-container">
+    <div id="browser-killer-section">
+      <h2>1. Utils to kill the most annoying browser default style</h2>
+      <h3>CSS</h3>
+      <pre><code class="language-css">body {
+  background-color: rgb(250,250,250);
+  color: rgb(40,40,40);
+}
+
+body, h1, h2, h3, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}</code></pre>
+    </div>
     <div id="container-section">
-      <h2>1. Responsive and simple content container (used on that page)</h2>
+      <h2>2. Content container (used on that page)</h2>
       <h3>HTML</h3>
       <script type="text/plain" class="language-markup"><div class="content-container"></div></script>
       <h3>CSS</h3>
@@ -47,8 +69,8 @@
   }
 }</code></pre>
     </div>
-    <div id="navbar-footer-page">
-      <h2>2. Responsive page frame with a header and footer</h2>
+    <div id="navbar-footer-page-section">
+      <h2>3. Page frame with a header/footer</h2>
       <p>Live example <a href="head-foot-page.html">here</a></p>
       <h3>HTML</h3>
       <script type="text/plain" class="language-markup"><div class="page-frame-content">
@@ -82,6 +104,67 @@
   padding: 16px;
 }</code></pre>
     </div>
+    <div id="cards-section">
+      <h2>4. Cards</h2>
+      <p>Link to the style <a href="style/components/card.css">here</a></p>
+      <div class="cards">
+        <div class="card-hello">
+          <img src="https://picsum.photos/640/480" alt="">
+          <div class="card-hello-info">
+            <h2>The Hello Card</h2>
+            <p>The image gets bigger when you hover over it. The info of the card gets hidden when the card gets bigger.</p>
+          </div>
+        </div>
+        <div class="card-pick">
+          <img src="https://picsum.photos/640/480" alt="">
+          <div class="card-pick-info">
+            <h2>The Pick card</h2>
+            <p>It goes up when you hover over it.</p>
+          </div>
+        </div>
+        <div class="card-skills">
+          <div class="card-skills-img" style="background-image: url(https://picsum.photos/640/480)">
+            <h2>The skill card</h2>
+          </div>
+          <div class="card-skills-info">
+            <div class="card-skills-info-content">
+              <p>A card with a collapsable list of skills.</p>
+              <ul>
+                <li>🧠 an Einstein-level brain</li>
+                <li>🐘 the memory of an elephant</li>
+                <li>💪 Norrissian muscles</li>
+                <li>🎸 a rock-star creativity</li>
+                <li>🍷 romantic enough to shame a Frenchman</li>
+                <li>👾 geeker than a 4chan teenager</li>
+              </ul>
+            </div>
+            <div class="card-skills-info-more">
+              <i class="fa fa-chevron-down" aria-hidden="true"></i> More
+            </div>
+          </div>
+        </div>
+        <script>
+          document.querySelector(".card-skills-info-more")
+            .addEventListener("click" , (event) => {
+              document.querySelector(".card-skills-info").classList.toggle("show");
+              event.currentTarget.querySelector("i").classList.toggle("fa-chevron-down");
+              event.currentTarget.querySelector("i").classList.toggle("fa-chevron-up");
+          })
+        </script>
+        <div class="card-hello">
+          <img src="https://picsum.photos/640/480" alt="">
+          <div class="card-hello-info">
+            <h2>A cool title</h2>
+            <p>An some crazy awesome explanations</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/plugins/autoloader/prism-autoloader.min.js"></script>

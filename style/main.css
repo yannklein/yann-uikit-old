@@ -2,9 +2,14 @@
 @import url('components/browser-def-killer.css');
 @import url('components/container.css');
 @import url('components/page-frame.css');
+@import url('components/card.css');
 
 body {
   font-family: sans-serif;
+}
+
+h1 {
+  font-size: 48px;
 }
 
 h2 {
