@@ -1,0 +1,17 @@
+@import url('components/banner.css');
+@import url('components/browser-def-killer.css');
+@import url('components/container.css');
+@import url('components/page-frame.css');
+
+body {
+  font-family: sans-serif;
+}
+
+h2 {
+  margin-top: 64px;
+  margin-bottom: 32px;
+}
+
+p {
+  margin: 16px 0;
+}
