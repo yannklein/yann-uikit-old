@@ -178,6 +178,37 @@ a {
           </div>
         </div>
 
+        <div class="card-diapo">
+          <div class="card-diapo-img show" style="background-image: url(https://fr.web.img4.acsta.net/newsv7/16/07/22/12/35/275530.jpg); background-position-x: left">
+            <div class="card-diapo-text">
+              <h2>The Bad</h2>
+              <p>The diapo card</p>
+            </div>
+          </div>
+          <div class="card-diapo-img" style="background-image: url(https://fr.web.img4.acsta.net/newsv7/16/07/22/12/35/275530.jpg); background-position-x: center">
+            <div class="card-diapo-text">
+              <h2>The Good</h2>
+              <p>The diapo card</p>
+            </div>
+          </div>
+          <div class="card-diapo-img" style="background-image: url(https://fr.web.img4.acsta.net/newsv7/16/07/22/12/35/275530.jpg); background-position-x: right">
+            <div class="card-diapo-text">
+              <h2>The Ugly</h2>
+              <p>The diapo card</p>
+            </div>
+          </div>
+          <script>
+            let imgIndex = 1;
+            const cardDiapoImgs = document.querySelectorAll(".card-diapo-img");
+            setInterval(() => {
+              cardDiapoImgs.forEach(cardDiapoImg => {
+                cardDiapoImg.classList.remove("show");
+              });
+              cardDiapoImgs[imgIndex].classList.add("show");
+              imgIndex = (imgIndex + 1) % cardDiapoImgs.length;
+            }, 5000);
+          </script>
+        </div>
       </div>
     </div>
   </div>

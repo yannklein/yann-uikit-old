@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 48px;
+  margin-bottom: 64px;
 }
 
 .card-hello {
@@ -162,6 +163,51 @@
   margin-top: 16px;
 }
 
+.card-diapo {
+  height: 300px;
+  position: relative;
+}
+
+.card-diapo-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 16px;
+  width: 100%;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 3s ease-out;
+}
+
+.card-diapo-img.show {
+  opacity: 1;
+}
+
+.card-diapo-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(240,240,240);
+  text-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.card-diapo-text h2 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.card-diapo-text p {
+  margin: 0;
+}
+
+/*
+background: url('https://i.ebayimg.com/images/g/Z3wAAOSwoQ1TmJum/s-l300.jpg');
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media (max-width: 992px) {
