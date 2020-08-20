@@ -1,3 +1,4 @@
+/*Card grid */
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -5,9 +6,12 @@
   margin-bottom: 64px;
 }
 
+/*Card Hello*/
 .card-hello {
+  /*fixed*/
   display: flex;
   flex-direction: column;
+  /*customizable*/
   height: 300px;
   border-radius: 16px;
   background-color: white;
@@ -15,30 +19,39 @@
 }
 
 .card-hello img {
-  border-radius: 16px 16px 0 0;
-  height: 30%;
+  /*fixed*/
   width: 100%;
   object-fit: cover;
+  /*customizable*/
   object-position: 50% 50%;
+  border-radius: 16px 16px 0 0;
+  height: 30%;
 }
 
 .card-hello-info {
-  padding: 16px;
+  /*fixed*/
   overflow: hidden;
+  /*customizable*/
+  padding: 16px;
 }
 
 .card-hello-info h2 {
+  /*customizable*/
   margin: 16px 0;
 }
 
 .card-hello img:hover {
+  /*customizable*/
   transition: height 1s ease;
   height: 70%;
 }
 
+/*Card pick*/
 .card-pick {
+  /*fixed*/
   display: flex;
   flex-direction: column;
+  /*customizable*/
   height: 300px;
   border-radius: 4px;
   background-color: white;
@@ -46,75 +59,93 @@
 }
 
 .card-pick img {
+  /*fixed*/
   width: 100%;
   min-height: 100px;
   flex-grow: 1;
   object-fit: cover;
+  /*customizable*/
   object-position: 50% 50%;
   border-radius: 4px 4px 0 0;
 }
 
 .card-pick-info {
+  /*customizable*/
   padding: 16px;
 }
 
 .card-pick-info h2 {
+  /*customizable*/
   margin: 16px 0;
 }
 
 .card-pick:hover {
+  /*customizable*/
   transition: 0.2s ease-out;
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgb(0,0,0,0.3);
 }
 
+/*Card skills*/
 .card-skills {
+  /*fixed*/
   display: flex;
   flex-direction: column;
+  /*customizable*/
   height: 300px;
 }
 
 .card-skills-img {
-  width: 100%;
-  min-height: 100px;
-  background-size: cover;
-  background-position: 50% 50%;
+  /*fixed*/
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  min-height: 100px;
+  background-size: cover;
+  /*customizable*/
+  background-position: 50% 50%;
   border-radius: 4px 4px 0 0;
   box-shadow: 0 0px 16px rgb(0,0,0,0.3);
 }
 
 .card-skills-img h2 {
+  /*customizable*/
   color: white;
   margin: 0;
   text-shadow: 0 0 8px rgb(0,0,0,0.3);
 }
 
 .card-skills-info {
-  height: 200px;
+  /*fixed*/
   display: flex;
   flex-direction: column;
+  z-index: 2;
+  /*customizable*/
+  height: 200px;
   box-shadow: 0 0px 16px rgb(0,0,0,0.3);
   border-radius: 0 0 4px 4px;
   background-color: white;
-  z-index: 2;
 }
 
 .card-skills-info-content {
+  /*fixed*/
   overflow: hidden;
-  padding: 0 32px;
   flex-shrink: 1;
+  /*customizable*/
+  padding: 0 32px;
 }
 
 .card-skills-info ul {
+  /*customizable*/
   list-style: none;
 }
 
 .card-skills-info-more {
-  padding: 8px 0;
+  /*fixed*/
   width: 100%;
+  /*customizable*/
+  padding: 8px 0;
   background-color: rgb(240,240,240);
   cursor: pointer;
   text-align: center;
@@ -122,18 +153,23 @@
 }
 
 .card-skills-info.show {
-  transition: height 0.3s ease-out;
+  /*fixed*/
   height: 100%;
+  /*customizable*/
+  transition: height 0.3s ease-out;
 }
 
 .card-identity {
-  height: 300px;
-  border-radius: 16px;
+  /*fixed*/
   display: flex;
   align-items: center;
+  /*customizable*/
+  height: 300px;
+  border-radius: 16px;
 }
 
 .card-identity-content {
+  /*customizable*/
   padding: 24px;
   backdrop-filter: blur(8px);
   -web-kit-backdrop-filter: blur(8px);
@@ -141,73 +177,90 @@
 }
 
 .card-identity-avatar {
+  /*fixed*/
   display: flex;
   align-items: center;
 }
 
 .card-identity-avatar img {
+  /*fixed*/
+  object-fit: cover;
+  border-radius: 50%;
+  /*customizable*/
   width: 64px;
   height: 64px;
-  object-fit: cover;
   object-position: 50% 50%;
-  border-radius: 50%;
   margin-right: 16px;
 }
 
 .card-identity-avatar h2 {
+  /*fixed*/
   margin: 0;
 }
 
 .card-identity-content p {
+  /*fixed*/
   margin: 0;
   margin-top: 16px;
 }
 
+/*Card diapo*/
 .card-diapo {
-  height: 300px;
+  /*fixed*/
   position: relative;
+  /*customizable*/
+  height: 300px;
 }
 
 .card-diapo-img {
+  /*fixed*/
   position: absolute;
   height: 100%;
   width: 100%;
-  border-radius: 16px;
   background-size: cover;
   opacity: 0;
+  /*customizable*/
+  border-radius: 16px;
   transition: opacity 3s ease-out;
 }
 
 .card-diapo-img.show {
+  /*fixed*/
   opacity: 1;
 }
 
 .card-diapo-text {
+  /*fixed*/
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /*customizable*/
   color: rgb(240,240,240);
   text-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
 
 .card-diapo-text h2 {
-  font-size: 32px;
+  /*fixed*/
   margin: 0;
+  /*customizable*/
+  font-size: 32px;
 }
 
 .card-diapo-text p {
+  /*fixed*/
   margin: 0;
 }
 
 .card-neumorph {
-  height: 300px;
+  /*customizable*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  border-radius: 50px;
+  height: 300px;
+  border-radius: 24px;
   background: -webkit-linear-gradient(55deg, #8aa0db, #a4beff);
   background: -o-linear-gradient(55deg, #8aa0db, #a4beff);
   background: linear-gradient(145deg, #8aa0db, #a4beff);
@@ -216,6 +269,7 @@
 }
 
 .card-neumorph-buttons {
+  /*customizable*/
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -223,12 +277,16 @@
 }
 
 .card-neumorph h2 {
+  /*customizable*/
   font-size: 32px;
   margin: 0;
   text-align: center;
+  color: #8aa0db;
+  text-shadow: 2px 2px 4px #a4beff;
 }
 
 .card-neumorph-buttons p {
+  /*customizable*/
   display: flex;
   font-size: 32px;
   align-items: center;
@@ -238,6 +296,8 @@
   width: 64px;
   margin: 0;
   cursor: pointer;
+  color: #6a80bb;
+  text-shadow: 2px 2px 6px #a4beff;
   background: -webkit-linear-gradient(55deg, #8aa0db, #a4beff);
   background: -o-linear-gradient(55deg, #8aa0db, #a4beff);
   background: linear-gradient(145deg, #8aa0db, #a4beff);
@@ -246,14 +306,20 @@
 }
 
 .card-neumorph-buttons p:active {
+  /*fixed*/
   box-shadow: none;
 }
 
 .card-neumorph a {
-  background: linear-gradient( 109.6deg,  rgba(248,68,146,1) 11.2%, rgba(88,122,205,1) 91.1% );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /*customizable*/
+  color: #6a80bb;
+  text-shadow: 2px 2px 6px #a4beff;
 }
+
+/*  background: linear-gradient( 109.6deg,  rgba(248,68,146,1) 11.2%, rgba(88,122,205,1) 91.1% );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media (max-width: 992px) {
