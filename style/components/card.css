@@ -172,10 +172,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  top: 0;
-  left: 0;
   border-radius: 16px;
-  width: 100%;
   background-size: cover;
   opacity: 0;
   transition: opacity 3s ease-out;
@@ -209,7 +206,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   border-radius: 50px;
   background: -webkit-linear-gradient(55deg, #8aa0db, #a4beff);
   background: -o-linear-gradient(55deg, #8aa0db, #a4beff);
@@ -225,8 +222,15 @@
   width: 100%;
 }
 
+.card-neumorph h2 {
+  font-size: 32px;
+  margin: 0;
+  text-align: center;
+}
+
 .card-neumorph-buttons p {
   display: flex;
+  font-size: 32px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -241,8 +245,12 @@
                -10px -10px 30px #b0cdff;
 }
 
+.card-neumorph-buttons p:active {
+  box-shadow: none;
+}
+
 .card-neumorph a {
-  background: linear-gradient( 109.6deg,  rgba(238,58,136,1) 11.2%, rgba(88,122,205,1) 91.1% );
+  background: linear-gradient( 109.6deg,  rgba(248,68,146,1) 11.2%, rgba(88,122,205,1) 91.1% );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
