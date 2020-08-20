@@ -166,6 +166,8 @@
   /*customizable*/
   height: 300px;
   border-radius: 16px;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .card-identity-content {
