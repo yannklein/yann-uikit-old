@@ -114,7 +114,14 @@ a {
             <h2>The Hello Card</h2>
             <p>The image gets bigger when you hover over it. The info of the card gets hidden when the card gets bigger.</p>
           </div>
+        <script>
+          document.querySelector(".card-hello img")
+            .addEventListener("touchend", (event) => {
+              event.currentTarget.classList.toggle("tapped");
+            });
+        </script>
         </div>
+
         <div class="card-pick">
           <img src="https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
           <div class="card-pick-info">
@@ -212,9 +219,9 @@ a {
 
         <div class="card-neumorph">
           <div class="card-neumorph-buttons">
-            <p>ᄚ</p>
-            <p>ᄨ</p>
-            <p>ᄞ</p>
+            <p>⚭</p>
+            <p>⚧</p>
+            <p>⌬</p>
           </div>
           <h2>The <a href="https://neumorphism.io">Neumorphism</a> card</h2>
         </div>
