@@ -1,5 +1,5 @@
 .banner {
   padding: 80px 0;
-  background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient( -70deg,  rgba(9,9,121,0.8) 11.2%, rgba(144,6,161,0.8) 53.7%, rgba(0,212,255,0.8) 100.2% );  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient( -70deg,  rgba(9,9,121,0.8) 11.2%, rgba(144,6,161,0.8) 53.7%, rgba(0,212,255,0.8) 100.2% ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
