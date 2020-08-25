@@ -26,6 +26,7 @@
   object-position: 50% 50%;
   border-radius: 16px 16px 0 0;
   height: 30%;
+  transition: height 1s ease;
 }
 
 .card-hello-info {
@@ -40,15 +41,16 @@
   margin: 16px 0;
 }
 
-.card-hello img:hover {
-  /*customizable*/
-  transition: height 1s ease;
-  height: 70%;
+/* De-activate card hover style for mobiles */
+@media (min-width: 576px) {
+  .card-hello img:hover {
+    /*customizable*/
+    height: 70%;
+  }
 }
 
 .card-hello img.tapped {
   /*customizable*/
-  transition: height 1s ease;
   height: 70%;
 }
 
