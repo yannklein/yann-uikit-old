@@ -135,6 +135,7 @@
   position: absolute;
   top: 100px;
   box-shadow: 0 0px 16px rgb(0,0,0,0.3);
+  transition: height 0.3s ease-out;
 }
 
 .card-skills-info-content {
@@ -164,8 +165,6 @@
 .card-skills-info.show {
   /*fixed*/
   height: 100%;
-  /*customizable*/
-  transition: height 0.3s ease-out;
 }
 
 .card-identity {
