@@ -143,7 +143,7 @@
 .card-skills-info-content {
   /*fixed*/
   overflow: hidden;
-  flex-shrink: 1;
+  flex-grow: 1;
   /*customizable*/
   padding: 0 32px;
 }
