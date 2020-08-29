@@ -3,6 +3,7 @@
 @import url('components/container.css');
 @import url('components/page-frame.css');
 @import url('components/card.css');
+@import url('components/item.css');
 
 body {
   font-family: sans-serif;

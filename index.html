@@ -227,6 +227,30 @@ a {
         </div>
       </div>
     </div>
+    <div id="cards-section">
+      <h2>5. Item Cards</h2>
+      <p>Link to the style <a href="style/components/item.css">here</a></p>
+      <div class="items">
+        <div class="item-drawer">
+          <div class="item-drawer-content">
+            <h2>The drawer item</h2>
+          </div>
+          <div class="item-drawer-button">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+          <div class="item-drawer-settings">
+            <a href="#"><i class="fas fa-edit"></i></a>
+            <a href="#"><i class="fas fa-trash"></i></a>
+          </div>
+          <script>
+            document.querySelector(".item-drawer-button")
+              .addEventListener("click", (event) => {
+                document.querySelector(".item-drawer").classList.toggle("active");
+              });
+          </script>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/plugins/autoloader/prism-autoloader.min.js"></script>
