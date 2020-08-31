@@ -4,6 +4,7 @@
 @import url('components/page-frame.css');
 @import url('components/card.css');
 @import url('components/item.css');
+@import url('components/navbar.css');
 
 body {
   font-family: sans-serif;

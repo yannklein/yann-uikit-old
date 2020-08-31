@@ -261,6 +261,40 @@ a {
       </div>
     </div>
   </div>
+  <div id="cards-section">
+    <div class="content-container">
+      <h2>5. Navbars</h2>
+    </div>
+    <div class="navbar-vanilla">
+      <a class="navbar-vanilla-section" href="#">
+        <img class="navbar-vanilla-logo" src="images/youtube.png" alt="youtube">
+        <h2 class="navbar-vanilla-brand" >Vanilla CSS navbar</h2>
+      </a>
+      <div class="navbar-vanilla-section">
+        <div class="navbar-vanilla-menu">
+          <a href="#">CSS tricks</a>
+          <a href="#">Design gems</a>
+        </div>
+        <div class="navbar-vanilla-profile">
+          <img src="https://avatars2.githubusercontent.com/u/26819547?s=400&u=ae79d8825ad1127723641cbf32a9a7e2ec221e7f&v=4" alt="">
+          <ul>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <script>
+        document.querySelector(".navbar-vanilla-profile img")
+          .addEventListener("click", (event) => {
+            document.querySelector(".navbar-vanilla-profile").classList.toggle("active");
+          })
+      </script>
+    </div>
+  </div>
+  <div class="content-container">
+    <br><br><br><br><br><br><br><br><br>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/plugins/autoloader/prism-autoloader.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>

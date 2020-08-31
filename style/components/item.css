@@ -119,9 +119,8 @@
   left: 50%;
   /*customizable*/
   transform: translate(-50%, -60%);
-  height: 160px;
-  width: 160px;
-
+  height: 150px;
+  width: 150px;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -135,5 +134,11 @@
 @media (max-width: 576px) {
   .items {
     grid-template-columns: 1fr;
+  }
+
+  .item-3d-icon img {
+    transform: translate(-30%, -50%);
+    height: 120px;
+    width: 120px;
   }
 }
