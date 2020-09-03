@@ -2,9 +2,14 @@
   display: flex;
 }
 
+.page-section {
+  margin-bottom: 48px;
+}
+
 .content-container {
   flex-grow: 1;
   margin: 0 auto;
+  padding: 16px;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

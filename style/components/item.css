@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 24px;
-  padding-right: 32px;
 }
 
 .item-drawer {
