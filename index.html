@@ -258,6 +258,27 @@ a {
             <img src="images/youtube.png" alt="">
           </div>
         </div>
+        <div class="item-flip">
+          <div class="item-flip-inner">
+            <div class="item-flip-front">
+              <div class="item-flip-content">
+                <h2>The flipping item</h2>
+                <p>Hover it to display...</p>
+              </div>
+            </div>
+            <div class="item-flip-back">
+              <div class="item-flip-content">
+                <p>The back of the card!</p>
+              </div>
+            </div>
+          </div>
+          <script>
+          document.querySelector(".item-flip")
+            .addEventListener("touchend", (event) => {
+              event.currentTarget.classList.toggle("flipped");
+            });
+          </script>
+        </div>
       </div>
     </div>
   </div>
