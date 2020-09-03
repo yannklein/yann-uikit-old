@@ -1,5 +1,9 @@
+.page-container {
+  display: flex;
+}
+
 .content-container {
-  width: 80vw;
+  flex-grow: 1;
   margin: 0 auto;
 }
 
