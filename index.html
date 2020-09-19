@@ -20,6 +20,7 @@
     <div class="sidebar-burger"><i class="fas fa-hamburger"></i></div>
     <div class="sidebar">
       <a href="#browser-killer-section">❐ Browser killer</a>
+      <a href="#navbar-footer-page-section">❐ Responsive container</a>
       <a href="#navbar-footer-page-section">❐ Page frame</a>
       <a href="#cards-section">❐ Cards</a>
       <a href="#items-section">❐ Item cards</a>
@@ -131,7 +132,7 @@ a {
             </div>
           <script>
             document.querySelector(".card-hello img")
-              .addEventListener("touchend", (event) => {
+              .addEventListener("click", (event) => {
                 event.currentTarget.classList.toggle("tapped");
               });
           </script>
@@ -288,7 +289,7 @@ a {
             </div>
             <script>
             document.querySelector(".item-flip")
-              .addEventListener("touchend", (event) => {
+              .addEventListener("click", (event) => {
                 event.currentTarget.classList.toggle("flipped");
               });
             </script>
