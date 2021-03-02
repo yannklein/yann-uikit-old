@@ -391,8 +391,8 @@
 }
 
 .card-stack-item p {
-  /*fixed*/
-  margin: 0;
+  /*customizable*/
+  margin: 0 32px;
 }
 
 /*  background: linear-gradient( 109.6deg,  rgba(248,68,146,1) 11.2%, rgba(88,122,205,1) 91.1% );
